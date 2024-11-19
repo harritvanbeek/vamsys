@@ -6,13 +6,13 @@ so you can use all the data on your own.
 
 for the config follow the instructions :
 
-make new file white the name ".evn" and save 
+make new file white the name ".env" and save 
 
 open the file and copy the below this line.
 
 ----------------------------------------------
 
-jsonKey=<br>
-apiKey=
+jsonKey=[your vamsys json key]<br>
+apiKey=[your vamsys api key]
 
 ----------------------------------------------

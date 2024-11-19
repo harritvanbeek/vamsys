@@ -5,8 +5,14 @@
                     $apiUri     = "https://vamsys.io/",
                     $jsonData   = "",
                     $jsonFile   = "",
-                    $jsonKey    = "1c4b7c63-65ea-4893-acf9-d97de37afe7f",
-                    $apiKey     = "252|VE6E2gwDPCjtS7V43WHibr7gFK7q9xwJJR8H6sJ8ff4d56bb";
+                    $jsonKey    = null,
+                    $apiKey     = null;
+
+
+
+        public function __construct($env){
+            echo $env->get("jsonKey");
+        }
 
         public function leaderboard(){
             $this->jsonData = self::JsonRequest('leaderboard/');

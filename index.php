@@ -1,7 +1,11 @@
 <?php 
 
 include_once "includes/vamsys.php";
-$vamsys =   new vamsys();
+include_once "includes/env.php";
+
+
+$env    =   new env();
+$vamsys =   new vamsys($env);
 
 
 /* 
