@@ -14,10 +14,7 @@ class env {
     }
     
     protected function setenv(){
-        
-        
-        die;
-        $this->_FILENAME   =  file_get_contents(dirname(dirname(__FILE__)).".env");
+        $this->_FILENAME   =  file_get_contents(dirname(dirname(__FILE__)). DIRECTORY_SEPARATOR .".env");
         $this->_LINES      = explode("\n",$this->_FILENAME);
         foreach($this->_LINES as $this->_LINE){
             preg_match("/([^#]+)\=(.*)/",$this->_LINE, $this->_MATCHES);            

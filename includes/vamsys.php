@@ -11,7 +11,8 @@
 
 
         public function __construct($env){
-            echo $env->get("jsonKey");
+            $this->jsonKey  = $env->get("jsonKey");
+            $this->apiKey   = $env->get("apiKey");
         }
 
         public function leaderboard(){
