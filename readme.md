@@ -12,7 +12,7 @@ open the file and copy the below this line.
 
 ----------------------------------------------
 
-jsonKey=<br>
-apiKey=
+jsonKey=[your vamsys json key]<br>
+apiKey=[your vamsys api key]
 
 ----------------------------------------------
