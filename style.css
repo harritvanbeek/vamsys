@@ -1,0 +1,573 @@
+/*
+SW Virtual CSS Config for vAMSYS v5
+Version: 1.7
+Author: Jan Podlipsky - jan.podlipsky@sw-virtual.eu
+*/
+
+:root{ /* Variable section of the CSS, edit your colors only here: */
+	--primary-rgb: 0,69,138; /* Primary VA Color in RGB format. Should be darker. */
+	--secondary-rgb: 241,144,1; /* Secondary VA Color in RGB format. Should be brighter. */
+	--primary-darkmode-color: 255,255,255; /* Primary Dark mode color. In this case, it's white, but theoretically it can be any very bright color. */
+	--danger-rgb: 241, 87, 118; /* Warning color, I recommend some shade of red. */
+}
+
+/* Light mode section */
+.menu .menu-item .menu-link>.menu-text {
+	font-weight: 450;
+}
+
+:root{
+	--primary: var(--primary-rgb) !important;
+	--primary-600: var(--secondary-rgb) !important;
+	--success: var(--primary-rgb) !important;
+	--success-500: var(--secondary-rgb) !important;
+	--success-600: var(--primary-rgb) !important;
+	--info: var(--primary-rgb) !important;
+	--info-500: var(--primary-rgb) !important;
+	--info-600: var(--primary-rgb) !important;
+	--warning: var(--primary-rgb) !important;
+	--gray-400: var(--primary-rgb) !important;
+	--gray-950: var(--primary-rgb) !important;
+	--gray-800: var(--primary-rgb) !important;
+	--gray-500: var(--primary-rgb) !important;
+	--tw-body-color: rgb(var(--primary-rgb)) !important;
+	--tw-menu-item-color: rgb(var(--primary-rgb)) !important;
+	--tw-topbar-item-color: rgb(var(--primary-rgb)) !important;
+	--tw-menu-item-active-color: rgb(var(--secondary-rgb)) !important;
+	--tw-topbar-item-active-color: rgb(var(--secondary-rgb)) !important;
+	--tw-menu-item-hover-color: rgb(var(--secondary-rgb)) !important;
+	--tw-topbar-item-hover-color: rgb(var(--secondary-rgb)) !important;
+	--tw-gradient-from: rgb(var(--primary-rgb)) var(--tw-gradient-from-position) !important;
+}
+
+.alert.alert-success {
+    color: rgb(255,255,255) !important;
+	background-color: rgba(var(--success)) !important;
+}
+
+.alert.alert-danger {
+    color: rgb(255,255,255) !important;
+	background-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.alert.alert-warning {
+	color: rgb(255,255,255,0.9) !important;
+}
+
+.active.fc-tab-active\:text-gray-900 {
+	color: rgb(255,255,255,0.9) !important;
+	font-weight: 600 !important;
+	background: rgb(var(--secondary-rgb)) !important;
+	border-bottom-color: white !important;
+}
+
+.fal, .fa-light {
+	color: rgb(var(--primary-rgb)) !important;
+}
+
+.fal, .fa-light:hover {
+	color: rgb(var(--secondary-rgb)) !important;
+}
+
+.hover\:text-gray-700:hover {
+	color: rgb(255,255,255,0.9) !important;
+	background-color: rgb(var(--secondary-rgb),.7) !important;
+}
+
+.to-\[\#160f6b\] {
+	--tw-gradient-to: white var(--tw-gradient-to-position) !important;
+}
+
+.from-\[\#4361ee\] {
+	--tw-gradient-from: rgb(var(--primary-rgb)) var(--tw-gradient-from-position) !important;
+}
+
+.fi-ta-empty-state-heading {
+	color: rgb(var(--primary-rgb) / var(--tw-text-opacity)) !important;
+}
+
+.card-title {
+	color: rgb(var(--primary-rgb) / var(--tw-text-opacity)) !important;
+}
+
+.striped-table table tbody tr td {
+	color: rgb(var(--primary-rgb) / var(--tw-text-opacity)) !important;
+}
+
+.tiptap-editor .ProseMirror {
+	color: rgb(var(--primary-rgb)) !important;
+}
+
+.fi-ta-header-heading {
+	color: rgb(var(--primary-rgb)) !important;
+}
+
+.text-custom-600 {
+	color: rgb(var(--primary-rgb)) !important;
+}
+
+.text-gray-700 {
+	color: rgb(var(--primary-rgb),0.7) !important;
+}
+
+.text-gray-400 {
+	color: rgb(var(--primary-rgb),0,6) !important;
+}
+
+.text-gray-500 {
+	color: rgb(var(--primary-rgb),0.8) !important;
+}
+
+.btn-success:hover {
+	background-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.btn-info:hover {
+	background-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.fi-section-header-heading {
+	color: rgb(var(--primary-rgb)) !important;
+}
+
+.btn.btn-sm {
+	color: rgb(255,255,255) !important;
+	background-color: rgb(var(--primary-rgb)) !important;
+}
+
+.border-primary {
+	border-color: rgba(var(--primary-rgb)) !important;
+}
+
+.hover\:text-white:hover {
+	background: rgb(var(--secondary-rgb)) !important;
+	color: rgb(255,255,255) !important;
+	border-color: rgba(var(--secondary-rgb)) !important;
+}
+
+/*.bg-\[\#ebedf2\] {
+	background: rgb(var(--secondary-rgb),0.9) !important;
+}*/
+
+.text-\[\#515365\] {
+	color: rgbaa(var(--primary-rgb)) !important;
+}
+
+.ring-custom-600 {
+	color: rgb(255,255,255) !important;
+	background-color: rgb(var(--primary-rgb)) !important;
+	border-color: rgb(var(--primary-rgb)) !important;
+	--tw-ring-color: rgb(var(--primary-rgb)) !important;
+}
+
+.hover\:bg-custom-400\/10:hover {
+	background: rgb(var(--secondary-rgb)) !important;
+	color: rgb(255,255,255) !important;
+	border-color: rgba(var(--secondary-rgb)) !important;
+	--tw-ring-color: rgb(var(--secondary-rgb)) !important;
+}
+
+.text-gray-600 {
+	color: rgb(var(--primary-rgb),0,6) !important;
+}
+
+.ring-custom-600\/10 {
+	background-color: rgba(var(--secondary-rgb)) !important;
+	color: rgb(255,255,255) !important;
+}
+
+.badge.badge-success {
+	color: rgb(255,255,255) !important;
+	background-color: rgb(var(--primary-rgb)) !important;
+	border-color: rgb(var(--primary-rgb)) !important;
+	--tw-ring-color: rgb(var(--primary-rgb)) !important;
+}
+
+.badge {
+	color: rgb(255,255,255) !important;
+	background-color: rgb(var(--primary-rgb)) !important;
+	border-color: rgb(var(--primary-rgb)) !important;
+	--tw-ring-color: rgb(var(--primary-rgb)) !important;
+}
+
+.choices__group {
+	font-weight: 650 !important;
+}
+
+.hover\:bg-custom-500:hover {
+	background: rgb(var(--secondary-rgb)) !important;
+	border-color: rgba(var(--secondary-rgb)) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.btn-info-outline:hover {
+	background: rgb(var(--secondary-rgb)) !important;
+	border-color: rgba(var(--secondary-rgb)) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.fi-input-wrp:focus-within {
+	--tw-ring-opacity: 1 !important;
+	--tw-ring-color: rgb(var(--secondary-rgb)) !important
+}
+
+.card.card-primary {
+	background-color: rgb(var(--secondary-rgb)) !important;
+	border-color: rgb(var(--secondary-rgb)) !important;
+	--tw-ring-color: rgb(var(--secondary-rgb)) !important;
+}
+
+.card.card-warning {
+	background-color: rgb(var(--danger-rgb))!important;
+	border-color: rgb(var(--danger-rgb)) !important;
+	--tw-ring-color: rgb(var(--danger-rgb)) !important;
+}
+
+.card.card-danger {
+	background-color: rgb(var(--danger-rgb))!important;
+	border-color: rgb(var(--danger-rgb)) !important;
+	--tw-ring-color: rgb(var(--danger-rgb)) !important;
+}
+
+.fi-pagination-item-label, .fi-select-input, .fi-pagination-overview, .fi-input, .fi-ta-filter-indicators 
+span {
+	color: rgb(var(--primary),0.9) !important;
+}
+
+.card.card-info {
+	color: rgb(255,255,255) !important;
+	background-color: rgb(var(--secondary-rgb)) !important;
+	border-color: rgb(var(--secondary-rgb)) !important;
+	--tw-ring-color: rgb(var(--secondary-rgb)) !important;
+}
+
+/* Dark Mode section */
+:root:is(.dark) {
+	--primary: var(--primary-darkmode-color) !important;
+	--primary-600: var(--secondary-rgb) !important;
+	--success: var(--secondary-rgb) !important;
+	--success-600: var(--secondary-rgb) !important;
+	--warning: var(--secondary-rgb) !important;
+    --tw-topbar-bg: rgba(var(--gray-800)) !important;
+	--tw-menu-bg: #313a46 !important;
+	--tw-body-bg: #2d333c !important;
+    --tw-body-color: #aab8c5 !important;
+	--tw-menu-item-color: #aab8c5  !important;
+	--tw-menu-item-active-color: rgb(var(--secondary-rgb)) !important;
+	--tw-menu-item-hover-color: rgb(var(--secondary-rgb)) !important;
+	--tw-topbar-item-color: rgb(131, 145, 162) !important;
+	--tw-topbar-item-active-color: rgb(var(--secondary-rgb)) !important;
+	--tw-topbar-item-hover-color: rgb(var(--secondary-rgb)) !important;
+	--info-500: var(--secondary-rgb) !important;
+	--info-600: var(--secondary-rgb) !important;
+	--info-700: var(--primary-rgb) !important;
+	--dark: 33, 37, 41 !important;
+    --dark-50: 244, 246, 247 !important;
+    --dark-100: 227, 231, 234 !important;
+    --dark-200: 203, 211, 214 !important;
+    --dark-300: 166, 180, 186 !important;
+    --dark-400: 122, 140, 150 !important;
+    --dark-500: 95, 113, 123 !important;
+    --dark-600: 81, 95, 105 !important;
+    --dark-700: 70, 80, 88 !important;
+    --dark-800: 62, 69, 76 !important;
+    --dark-900: 55, 61, 66 !important;
+    --dark-950: 33, 37, 41 !important;
+    --gray-50: 245, 245, 247 !important;
+    --gray-100: 235, 236, 239 !important;
+    --gray-200: 206, 207, 214 !important;
+    --gray-300: 177, 178, 190 !important;
+    --gray-400: 118, 121, 141 !important;
+    --gray-500: 59, 63, 92 !important;
+    --gray-600: 53, 57, 83 !important;
+    --gray-700: 44, 47, 69 !important;
+	--gray-800: 49, 58, 70 !important;
+    --gray-900: 29, 31, 45 !important;
+    --gray-950: 18, 19, 28 !important;
+	--tw-gradient-from: rgb(var(--primary-rgb)) var(--tw-gradient-from-position) !important;
+}
+
+.card:is(.dark *) {
+    background-color: rgba(var(--gray-800)) !important;
+}
+
+.dark\:bg-gray-800:is(.dark *) {
+	background-color: rgba(49, 58, 70) !important;
+	color: var(--gray-800) !important;
+}
+
+.dark\:hover\:text-gray-400:hover:is(.dark *) {
+	color: rgb(var(--primary),0.7) !important;
+	font-weight: 600 !important;
+	background: rgb(var(--secondary-rgb),.7) !important;
+	border-bottom-color: white !important;
+}
+
+.fal, .fa-light:hover:is(.dark *) {
+	color: rgb(var(--secondary-rgb)) !important;
+}
+
+.fal, .fa-light:is(.dark *) {
+	color: var(--gray-800) !important;
+}
+
+.alert.alert-success:is(.dark *) {
+    color: rgba(var(--primary)) !important;
+	background-color: rgba(var(--success),0.9) !important;
+}
+
+.alert.alert-warning:is(.dark *) {
+	color: rgba(var(--primary),0.8) !important;
+}
+
+.dark\:text-white:is(.dark *)
+{
+    color: rgba(var(--primary),0.7) !important;
+}
+
+.fi-ta-empty-state-heading:is(.dark *) {
+	color: rgb(var(--primary) / var(--tw-text-opacity))!important;
+}
+
+.card-title:is(.dark *) {
+	color: rgb(var(--primary) / var(--tw-text-opacity))!important;
+}
+
+.striped-table table tbody tr td:is(.dark *) {
+	color: rgb(var(--primary) / var(--tw-text-opacity))!important;
+}
+
+.tiptap-editor .ProseMirror:is(.dark *) {
+	color: rgb(var(--primary)) !important;
+}
+
+.fi-ta-header-heading:is(.dark *) {
+	color: rgb(var(--primary)) !important;
+}
+
+.text-custom-600:is(.dark *) {
+	color: rgb(var(--primary),0.8) !important;
+}
+
+.to-\[\#160f6b\]:is(.dark *) {
+	--tw-gradient-to: white var(--tw-gradient-to-position) !important;
+}
+
+.from-\[\#4361ee\]:is(.dark *) {
+	--tw-gradient-from: rgb(var(--secondary-rgb),0.8) var(--tw-gradient-from-position) !important;
+}
+
+.text-gray-700:is(.dark *) {
+	color: rgb(var(--primary),0.7) !important;
+}
+
+.tiptap-editor .ProseMirror:is(.dark *) {
+	color: rgb(var(--primary),0.7) !important;
+}
+
+.text-primary:is(.dark *) {
+	color: var(--tw-body-color) !important;
+}
+
+.active.dark\:fc-tab-active\:text-white:is(.dark *) {
+	background-color: rgb(var(--secondary-rgb),0.9) !important;
+	color: rgb(var(--primary),0.9) !important;
+}
+
+.dark\:text-gray-400:is(.dark *) {
+	color: rgb(var(--primary),0.8) !important;
+}
+
+.dark\:ring-custom-500:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.9) !important;
+	color: rgba(var(--primary),0.9) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.9) !important;
+}
+
+.btn.btn-sm:is(.dark *) {
+	color: rgba(var(--primary)) !important;
+	background: rgb(var(--secondary-rgb),0.9) !important;
+	border-color: rgba(var(--secondary-rgb), 0.9) !important;
+}
+
+.border-primary:is(.dark *) {
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+
+.hover\:text-white:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary)) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+
+.bg-warning:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.8) !important;
+}
+
+.choices__list--single .choices__item:is(.dark *) {
+	color: rgba(var(--primary),0.8) !important;
+}
+
+.btn-info:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.9) !important;
+	color: rgba(var(--primary),0.8) !important;
+}
+
+.btn-info:hover:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.9) !important;
+}
+
+.dark\:bg-\[\#060818\]:is(.dark *) {
+	background-color: var(--tw-body-bg) !important;
+	color: rgba(var(--primary),0.9) !important;
+}
+
+.text-gray-500:is(.dark *) {
+	color: rgb(var(--primary),0.8) !important;
+}
+
+.dark\:text-custom-400:is(.dark *) {
+	color: rgb(var(--primary),0.9) !important;
+}
+
+.dark\:ring-custom-400\/30:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.9) !important;
+	color: rgba(var(--primary),0.9) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.9) !important;
+}
+
+.choices__placeholder.choices__item:is(.dark *) {
+	color: rgba(var(--primary),0.8) !important;
+}
+
+.badge.badge-success:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.8) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.8) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+
+.badge:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.8) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.8) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+.choices__group:is(.dark *) {
+	font-weight: 650 !important;
+	color: rgba(var(--primary)) !important;
+}
+
+.focus\:ring-0:focus:is(.dark *) {
+	--tw-ring-color: rgba(var(--secondary-rgb)) !important;
+}
+
+.hover\:bg-custom-500:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.7) !important;
+	border-color: rgba(var(--secondary-rgb), 0.7) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.9) !important;
+}
+
+.btn-info-outline:is(.dark *):hover {
+	background: rgb(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.8) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+
+.btn-danger-outline:is(.dark *):hover {
+	background: rgb(var(--danger-500), 0.8) !important;
+	color: rgba(var(--primary),0.7) !important;
+	border-color: rgba(var(--danger-500), 0.8) !important;
+}
+
+.dark\:bg-custom-500:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.8) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.9) !important;
+}
+
+.dark\:hover\:bg-custom-400:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.7) !important;
+	border-color: rgba(var(--secondary-rgb), 0.7) !important;
+}
+
+.dark\:hover\:bg-white\/10:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.7) !important;
+	border-color: rgba(var(--secondary-rgb), 0.7) !important;
+}
+
+.btn-primary:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.7) !important;
+	border-color: rgba(var(--secondary-rgb), 0.7) !important;
+}
+
+.btn-success:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.9) !important;
+	color: rgba(var(--primary),0.9) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.9) !important;
+	border-color: rgba(var(--secondary-rgb), 0.9) !important;
+}
+
+.btn-success:hover:is(.dark *) {
+	background: rgb(var(--secondary-rgb), 0.7) !important;
+	color: rgba(var(--primary),0.7) !important;
+	border-color: rgba(var(--secondary-rgb), 0.7) !important;
+}
+
+.btn-primary:is(.dark *) {
+	background: rgba(var(--secondary-rgb), 0.8) !important;
+	color: rgba(var(--primary),0.8) !important;
+	--tw-ring-color: rgba(var(--secondary-rgb), 0.8) !important;
+	border-color: rgba(var(--secondary-rgb), 0.8) !important;
+}
+
+.fi-input-wrp:focus-within:is(.dark *) {
+  --tw-ring-opacity: 1 !important;
+  --tw-ring-color: rgb(var(--secondary-rgb),0.8) !important
+}
+.choices__input:is(.dark *)::-moz-placeholder {
+    color: var(--tw-body-color);
+}
+.choices__input:is(.dark *)::placeholder {
+    color: var(--tw-body-color);
+}
+
+.card.card-primary:is(.dark *) {
+	background-color: rgb(var(--secondary-rgb), 0.8) !important;
+	border-color: rgb(var(--secondary-rgb), 0.8) !important;
+	--tw-ring-color: rgb(var(--secondary-rgb), 0.8) !important;
+}
+
+.card.card-warning:is(.dark *) {
+	background-color: rgb(var(--danger-rgb), 0.8)!important;
+	border-color: rgb(var(--danger-rgb), 0.8) !important;
+	--tw-ring-color: rgb(var(--danger-rgb), 0.8) !important;
+}
+
+.card.card-danger:is(.dark *) {
+	background-color: rgb(var(--danger-rgb), 0.8)!important;
+	border-color: rgb(var(--danger-rgb), 0.8) !important;
+	--tw-ring-color: rgb(var(--danger-rgb)), 0.8 !important;
+}
+
+.dark\:bg-dark\/40:is(.dark *) {
+	background-color: rgb(var(--primary-darkmode-color),0.8) !important
+}
+
+.dark\:text-custom-300\/50:is(.dark *) {
+	color: rgba(var(--primary),0.9) !important;
+}
+
+.card.card-info:is(.dark *) {
+	color: rgb(var(--primary-darkmode-color)) !important;
+	background-color: rgb(var(--secondary-rgb),0.9) !important;
+	border-color: rgb(var(--secondary-rgb),0.9) !important;
+	--tw-ring-color: rgb(var(--secondary-rgb),0.9) !important;
+}
