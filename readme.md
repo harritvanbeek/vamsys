@@ -12,7 +12,7 @@ open the file and copy the below this line.
 
 ----------------------------------------------
 
-jsonKey=
+jsonKey=<br>
 apiKey=
 
 ----------------------------------------------
